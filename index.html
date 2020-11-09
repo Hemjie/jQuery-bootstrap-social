@@ -3,12 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Troopers</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css">
+    <title>Social Westeros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <div class="page">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">                
+                <a id="title" class="navbar-brand" href="#">
+                    <img width="60" class="logo d-inline-block align-center" loading="lazy" src="logo-westeros.png" alt="logo de la corneille à 3 yeux">
+                    Social Westeros</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Nos posts</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Mon compte</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+          </nav>
+        
+        <div class="container mt-5">
+            <div class="card shadow-lg rounded-xl">
+                <div class="row">
+                  <div class="col-8">
+                    <img src="weirwood-tree.jpg" class="w-100 h-100 main-image" alt="arbre rouge de Winterfell">
+                  </div>
+                  <div class="col-4">
+                    <div class="card-body">
+                        <div class="media align-items-center">
+                            <img width="50" class="rounded-circle mr-3" src="jon-snow.png" alt="Jon Snow">
+                            <div class="media-body d-flex justify-content-between align-items-center">
+                                <h5 class="font-weight-bold mb-0">Aegon Targaryen</h5>
+                                <!-- <h6 class="card-subtitle mb-1 text-muted">AKA Jon Snow</h6> -->
+                                <a href="#" id="follow" class="btn btn-primary ml-3">Follow</a>
+                                <!-- <a href="#" id="unfollow" class="d-none btn btn-danger mr-5">Unfollow</a> -->
+                            </div>
+                        </div>
+                        <!-- <p class="card-text px-5 pt-2">TBT Mon départ de Winterfell #TBT #Winterfell #weirwoodtree</p> -->
+
+                        <hr class="my-3">
+
+                        <p><strong>Arya Stark </strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, qui repellat possimus eum quas fugiat aliquid amet tempore consectetur expedita corporis, vitae voluptatibus quo iure sit labore sapiente sed cum!</p>
+                                              
+                        <div class="hidden-comment d-none row px-3 py-3">
+                            <div class="col-md-2 pr-0">
+                                <img width="170" class="img-fluid rounded-circle" src="photo-sansa.jpg" alt="Sansa Stark">
+                            </div>
+                            <div class="col-md-10 pl-3 pb-2">
+                                <p id="added-id" class="card-text"><strong> Sansa Stark </strong></p>                                
+                            </div>
+                        </div>
+
+                        <hr class="mt-4 mb-3">
+
+                        <i id="empty-heart" class="far fa-heart fa-2x mr-4"></i>
+                        <!-- <i id="full-heart" class="d-none fas fa-heart fa-2x mr-4"></i> -->
+                        <i id="empty-comment" class="far fa-comment fa-2x"></i>
+                        <!-- <i id="full-comment" class="d-none fas fa-comment fa-2x"></i>  -->
+
+                        <br /><br />
+
+                        <strong>0 Likes</strong>
+                        
+                        <hr class="my-3">
+
+                        <div>
+                            <textarea class="form-control mb-3" placeholder="Ajouter un commentaire..." cols="52" rows="3"></textarea>
+                            <button id="add" class="btn btn-block btn-primary">Ajouter</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <footer class="text-center my-5">
+           Copyright  &copy; 2020.
+        </footer>
+    </div>
     <!-- # TP Back to HTML
 
     Nous allons intégrer une page en HTML / CSS / jQuery. Le client nous a fournit une maquette mais il nous annonce que
@@ -21,11 +107,16 @@
     - Un clic sur le coeur ajoute un like (infini) et change le coeur en noir (et vice-versa).
     - Un clic sur la bulle de commentaire affiche un formulaire ou le masque.
     - Si on remplit le formulaire et qu'on clique sur ajouter, le contenu s'ajoute au dessus. (.val() permet de récupérer la valeur d'un textarea en jQuery)
-    - Dans le message, on mettra le premier mot en gras afin qu'il puisse représenter le pseudo de l'utilisateur -->
+    - Dans le message, on mettra le premier mot en gras afin qu'il puisse représenter le pseudo de l'utilisateur 
+    - A faire en responsive -->
 
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    
 </body>
 </html>
 

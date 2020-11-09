@@ -1,0 +1,22 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #eeeeee;
+}
+
+#title {
+    font-size: 1.5rem;
+    
+}
+
+.rounded-xl {
+    border-radius: 1rem;
+}
+
+.main-image {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
