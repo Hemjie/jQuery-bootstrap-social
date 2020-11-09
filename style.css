@@ -20,3 +20,10 @@ body {
 h5 {
     font-size: 1rem;
 }
+
+@media (max-width: 992px) {
+    .main-image{
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    } 
+}
