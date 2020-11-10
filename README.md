@@ -1,5 +1,6 @@
 # jQuery-bootstrap-social
 Création d'une page en HTML-CSS-JS avec les frameworks Bootstrap et jQuery reproduisant une page de réseau social
+![social-westeros](/maquette-social.png)
 
 
 
